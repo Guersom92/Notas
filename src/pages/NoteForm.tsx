@@ -29,7 +29,7 @@ const NoteForm = () => {
           content: note.content,
         });
       } else {
-        navigate("/Notas");
+        navigate("/");
       }
     }
   }, []);
@@ -68,7 +68,7 @@ const NoteForm = () => {
       addNote(formData);
     }
 
-    navigate("/Notas");
+    navigate("/");
   };
 
   const handleChange = (
@@ -131,7 +131,7 @@ const NoteForm = () => {
             {isEditMode ? "Actualizar" : "Crear"} Nota
           </button>
           <Link
-            to="/Notas"
+            to="/"
             className="btn bg-gray-300 hover:bg-gray-400 text-gray-800 flex-1 text-center"
           >
             Cancelar

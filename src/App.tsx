@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import NotesList from "./pages/NotesList";
 import NoteDetail from "./pages/NoteDetail";
@@ -9,9 +9,9 @@ import { NotesProvider } from "./context/NotesContext";
 function App() {
   return (
     <NotesProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/Notas" element={<Layout />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<NotesList />} />
             <Route path="nueva" element={<NoteForm />} />
             <Route path=":id" element={<NoteDetail />} />
@@ -19,7 +19,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </NotesProvider>
   );
 }

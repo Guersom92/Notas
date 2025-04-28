@@ -6,7 +6,7 @@ const Layout = () => {
     <div className="min-h-screen flex flex-col">
       <header className="bg-[#5561f6] text-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/Notas" className="text-2xl font-bold">
+          <Link to="/" className="text-2xl font-bold">
             NotesApp
           </Link>
           <nav>

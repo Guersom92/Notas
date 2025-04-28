@@ -19,7 +19,7 @@ const NoteDetail = () => {
         <p className="mb-6 text-gray-600">
           La nota que buscas no existe o ha sido eliminada
         </p>
-        <Link to="/Notas" className="btn btn-primary">
+        <Link to="/" className="btn btn-primary">
           Volver a la lista
         </Link>
       </div>
@@ -29,7 +29,7 @@ const NoteDetail = () => {
   const handleDelete = () => {
     if (window.confirm("¿Estás seguro de que quieres eliminar esta nota?")) {
       deleteNote(note.id);
-      navigate("/Notas");
+      navigate("/");
     }
   };
 
@@ -38,10 +38,7 @@ const NoteDetail = () => {
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold truncate">{note.title}</h1>
         <div className="flex gap-2">
-          <Link
-            to={`editar`}
-            className="btn btn-primary text-white "
-          >
+          <Link to={`editar`} className="btn btn-primary text-white ">
             Editar
           </Link>
           <button onClick={handleDelete} className="btn btn-danger">
@@ -61,7 +58,7 @@ const NoteDetail = () => {
 
       <div className="mt-8">
         <Link
-          to="/Notas"
+          to="/"
           className="btn bg-gray-300 hover:bg-gray-400 text-gray-800"
         >
           Volver a la lista
