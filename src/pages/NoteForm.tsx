@@ -29,11 +29,10 @@ const NoteForm = () => {
           content: note.content,
         });
       } else {
-        // Si la nota no existe, redirigir a la página principal
         navigate("/Notas");
       }
     }
-  }, [id, isEditMode, getNote, navigate]);
+  }, []);
 
   const validateForm = () => {
     let isValid = true;

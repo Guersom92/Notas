@@ -39,14 +39,14 @@ const NotesList = () => {
             <div className="flex gap-2">
               <Link
                 to={`${note.id}`}
-                className="btn flex gap-2 text-white justify-center bg-green-600  hover:bg-green-700 flex-1 text-center"
+                className="btn text-white bg-green-600  hover:bg-green-700 flex-1 text-center"
               >
                 <IconEye />
                 Ver
               </Link>
               <Link
                 to={`${note.id}/editar`}
-                className="btn btn-primary flex gap-2 justify-center text-white   flex-1 text-center"
+                className="btn btn-primary  text-white   flex-1 text-center"
               >
                 <IconEdit />
                 Editar
@@ -61,7 +61,7 @@ const NotesList = () => {
                     deleteNote(note.id);
                   }
                 }}
-                className="btn flex gap-2 justify-center btn-danger flex-1"
+                className="btn btn-danger flex-1"
               >
                 <IconTrash />
                 Eliminar
