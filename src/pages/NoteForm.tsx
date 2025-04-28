@@ -30,7 +30,7 @@ const NoteForm = () => {
         });
       } else {
         // Si la nota no existe, redirigir a la página principal
-        navigate("/");
+        navigate("/Notas");
       }
     }
   }, [id, isEditMode, getNote, navigate]);
@@ -69,7 +69,7 @@ const NoteForm = () => {
       addNote(formData);
     }
 
-    navigate("/");
+    navigate("/Notas");
   };
 
   const handleChange = (
@@ -132,7 +132,7 @@ const NoteForm = () => {
             {isEditMode ? "Actualizar" : "Crear"} Nota
           </button>
           <Link
-            to="/"
+            to="/Notas"
             className="btn bg-gray-300 hover:bg-gray-400 text-gray-800 flex-1 text-center"
           >
             Cancelar

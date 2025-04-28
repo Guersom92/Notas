@@ -11,11 +11,11 @@ function App() {
     <NotesProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/Notas" element={<Layout />}>
             <Route index element={<NotesList />} />
-            <Route path="notas/nueva" element={<NoteForm />} />
-            <Route path="notas/:id" element={<NoteDetail />} />
-            <Route path="notas/:id/editar" element={<NoteForm />} />
+            <Route path="nueva" element={<NoteForm />} />
+            <Route path=":id" element={<NoteDetail />} />
+            <Route path=":id/editar" element={<NoteForm />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

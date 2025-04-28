@@ -8,7 +8,7 @@ const NotFound = () => {
       <p className="text-gray-600 mb-8">
         La página que estás buscando no existe o ha sido movida.
       </p>
-      <Link to="/" className="btn btn-primary">
+      <Link to="/Notas" className="btn btn-primary">
         Volver a la página principal
       </Link>
     </div>

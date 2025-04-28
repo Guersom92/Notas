@@ -15,7 +15,7 @@ const NotesList = () => {
       <div className="text-center py-12">
         <h2 className="text-2xl font-bold mb-4">No hay notas todavía</h2>
         <p className="mb-6 text-gray-600">Comienza creando tu primera nota</p>
-        <Link to="/notas/nueva" className="btn btn-primary">
+        <Link to="nueva" className="btn btn-primary">
           Crear Nota
         </Link>
       </div>
@@ -38,14 +38,14 @@ const NotesList = () => {
             </div>
             <div className="flex gap-2">
               <Link
-                to={`/notas/${note.id}`}
+                to={`${note.id}`}
                 className="btn flex gap-2 text-white justify-center bg-green-600  hover:bg-green-700 flex-1 text-center"
               >
                 <IconEye />
                 Ver
               </Link>
               <Link
-                to={`/notas/${note.id}/editar`}
+                to={`${note.id}/editar`}
                 className="btn btn-primary flex gap-2 justify-center text-white   flex-1 text-center"
               >
                 <IconEdit />
