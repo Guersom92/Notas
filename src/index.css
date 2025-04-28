@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-50;
+}
+
+@layer components {
+  .btn {
+    @apply px-2 py-2 rounded-md font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-[#5561f6] hover:bg-[#5558f6] text-white ;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600;
+  }
+
+  .card {
+    word-wrap: break-word;
+    @apply bg-white p-6 rounded-lg shadow-md;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+}
