@@ -6,7 +6,7 @@ body {
 
 @layer components {
   .btn {
-    @apply px-2 py-2 rounded-md font-medium transition-colors flex gap-2  justify-center;
+    @apply px-2 py-2 rounded-md font-medium transition-colors;
   }
 
   .btn-primary {

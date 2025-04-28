@@ -12,7 +12,7 @@ const Layout = () => {
           <nav>
             <Link
               to="nueva"
-              className="btn flex  gap-0.5  bg-green-600 hover:bg-green-500"
+              className="btn flex gap-0.5  bg-green-600 hover:bg-green-500"
             >
               <IconPlus />
               Nueva Nota
