@@ -29,7 +29,7 @@ const NotesList = () => {
         {sortedNotes.map((note) => (
           <div key={note.id} className="card hover:shadow-lg transition-shadow">
             <h2 className="text-xl font-bold mb-2 truncate">{note.title}</h2>
-            <p className="text-gray-600 mb-4 h-12 overflow-hidden">
+            <p className="text-gray-600 mb-4 h-30 overflow-hidden whitespace-pre-wrap">
               {note.content.substring(0, 100)}
               {note.content.length > 100 ? "..." : ""}
             </p>
